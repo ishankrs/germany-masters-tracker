@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Germany Master's Tracker</title>
+<meta name="description" content="English-taught computer science and data science master's programmes at public German universities, with requirements, deadlines and an application tracker.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="rail">
+    <div class="brand">Germany Master's Tracker<small id="updated"></small></div>
+    <div class="switch">
+      <label for="who">Profile</label>
+      <select id="who" aria-label="Switch profile"></select>
+    </div>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#overview" data-v="overview">Overview</a>
+      <a href="#programmes" data-v="programmes">Programmes <span class="n" id="n-progs"></span></a>
+      <a href="#mylist" data-v="mylist">My list <span class="n" id="n-list"></span></a>
+      <a href="#tasks" data-v="tasks">Tasks <span class="n" id="n-tasks"></span></a>
+      <a href="#universities" data-v="universities">Universities <span class="n" id="n-unis"></span></a>
+      <a href="#profile" data-v="profile">Profile and data</a>
+    </nav>
+    <div class="who" id="syncmsg" role="status"></div>
+  </aside>
+  <main id="main"><p class="lede">Loading…</p></main>
+</div>
+<script src="data/programmes.js"></script>
+<script src="data/universities.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

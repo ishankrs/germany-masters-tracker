@@ -1,0 +1,6 @@
+# Personal profile exports never belong in this repository.
+*.private.json
+private/
+.DS_Store
+.wrangler/
+node_modules/
